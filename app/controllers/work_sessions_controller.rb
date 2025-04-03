@@ -32,7 +32,7 @@ class WorkSessionsController < ApplicationController
     end
     redirect_to work_session_index_path
   end
- 
+#  paramjeet singh
   def clock_out
     @work_session = current_user.work_sessions.last
     if @work_session && @work_session.clock_in && @work_session.clock_out.nil?
